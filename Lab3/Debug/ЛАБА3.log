@@ -1,0 +1,4 @@
+﻿  ЛАБА3.cpp
+C:\Users\Пользователь\source\repos\ЛАБА3\ЛАБА3.cpp(19,13): warning C4326:  возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\Пользователь\source\repos\ЛАБА3\ЛАБА3.cpp(72,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  ЛАБА3.vcxproj -> C:\Users\Пользователь\source\repos\ЛАБА3\Debug\ЛАБА3.exe
