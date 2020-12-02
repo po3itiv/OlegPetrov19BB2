@@ -30,8 +30,9 @@ int st = 0;
 
 void main(int argc, char* argv[])
 {
-
+	
 	int naprav = 0, ves = 0;
+	 
 
 	setlocale(LC_CTYPE, "rus");
 
@@ -54,7 +55,14 @@ void main(int argc, char* argv[])
 
 		if (strcmp(argv[i], "weight") == 0) // weigh unweigh
 			ves = 1;
+		if (strcmp(argv[i], "razm") == 0)// размер графа
+		{
+			N = atoi(argv[i + 1]);
+			printf(" razm - размер графа: ");
+			printf("%s\n", argv[i + 1]);
+		}
 	}
+
 
 	if (ves == 1)
 		zad1();
@@ -79,8 +87,7 @@ void zad1()
 
 	setlocale(LC_ALL, "russian");
 
-	printf("\n Укажите размер матрицы N*N: ");
-	scanf("%d", &N);
+	
 
 	M1 = (int**)malloc(N * sizeof(int*));
 	for (int i = 0; i < N; i++)
@@ -147,8 +154,7 @@ void zad1_nevzv()
 {
 	setlocale(LC_ALL, "russian");
 
-	printf("\n Укажите размер матрицы N*N: ");
-	scanf("%d", &N);
+	
 
 	M1 = (int**)malloc(N * sizeof(int*));
 	for (int i = 0; i < N; i++)
@@ -210,6 +216,7 @@ void zad1_nevzv()
 	}
 
 }
+
 
 
 void zad1_2(int st)
